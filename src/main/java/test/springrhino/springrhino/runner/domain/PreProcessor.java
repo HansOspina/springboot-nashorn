@@ -23,15 +23,13 @@ public class PreProcessor implements Serializable {
 
     @Id
     @NotNull
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @NotNull
     @NotEmpty(message = "Script cannot be empty")
     private String script;
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Date modified;
 
 
 }
